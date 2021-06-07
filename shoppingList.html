@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Shopping App</title>
+		<script>
+			function addItem() {
+			var newItem = document.createElement("div");
+			newItem.innerHTML = document.getElementById("box").value;
+			document.getElementById("list").appendChild(newItem);
+			}
+		</script>
+	</head>
+	<body>
+		<!-- <div id="list" onclick="addItem();">Click Here to Add Item</div> -->
+		<input type="text" id="box"/>
+		<br />
+		<input type="button" value="Add Item" onclick="addItem();"/>
+		<div id="list"></div>
+	</body>
+</html>
